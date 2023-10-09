@@ -2,47 +2,215 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Kwakye Kwame D'Angelo</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/4db11967a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="header">
+        <img   class="logoImg" src="./images/logo.png" alt="logoIMG" class="logo">
         <nav>
-            <img src="./images/MyLogo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#aboutMe" id="smoothscroll">About Me</a></li>
-                <li><a href="https://github.com/AngeloKwakye" target="_blank">GitHub</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="detail">
-            <h1>Hi I'm Kwakye <span>D'Angelo</span></h1>
-            <p>Welcome to my portfolio website! <br>
-                I'm thrilled to have you here. <br>
-                Please feel free to explore and discover the projects I'm passionate about.
-                <br> Thank you for stopping by and I hope you enjoy your stay!
-            </p>
-            <a href="https://drive.google.com/file/d/1MdzWtDvpRZd2r4GpFk4V-EWwx3aslm1w/view?usp=sharing" target="_blank" download>DOWNLOAD CV</a>
-        </div>
-        <div class="images">
-            <img src="./images/organic-shape-background.png" class="backShape">
-            <img src="./images/Me.png" class="me">
-        </div>
-        <div class="lax">
-            <h1 id="aboutMe">
-               About Me
-            </h1>
-            <p>Hello! <br>
-            I'm Kwakye Kwame D'Angelo, an Angular developer based in Ghana. <br>
-        I thrive on transforming ideas into powerful web applications  using the Angular framework. <br>
-        With a strong foundation in TypeScript, HTML and CSS, I specialise in crafting interactive and efficient front-end solutions.  <br>
-        Through continuous leaning and a passion for clean code. I aim to build seamless user experiences that exceed expectations.
-    <br>Feel free to explore my projects to see the magin og Angular in action. Let's connect and bring your web project to life with the power of Angular!</p>
-        </div>
-        <footer>
-            <p>&copysr; 2023 portfolio website. All rights reserved.</p>
-        </footer>
     </div>
-   </body>
+    <div id="mainscreen">
+        <div class="container">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi I'm <span>D'Angelo</span><br> Kwame Kwakye From Ghana</h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------------About me------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1"><img src="./images/user.png"></div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> D'Angelo here, A <span>Ghanaian</span> Developer. <br>
+                        I enjoy bringing design ideas to life on the web. With a background in customer service and graphic design, I create user-friendly and visually appealing content. 
+                        I'm skilled in <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span> for crafting engaging web interfaces and experience building web applications with <span>Angular</span>, <span>Angular material</span> and <span>Bootstrap</span>. I collaborate well with teams to meet client needs.
+                        My strengths lie in problem-solving and clear communication to ensure great user experiences.
+                        I have expertise in using Canva for graphic design assignments. I possess a keen eye for detail and am capable of working both autonomously and collaboratively. 
+                        I make it a priority to stay updated with the latest trends and technologies in front-end development. I'm enthusiastic about connecting with fellow developers and industry professionals. 
+                        Lets link up!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br>
+                                <ul>
+                                    <li> HTML, CSS, JavaScript </li>
+                                    <li> Angular (Angular Material) </li>
+                                    <li> Bootstrap </li>
+                                    <li> Canva </li>
+                                    <li> Git </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>Infotech Dot Net Systems Ltd. (National Service) - Frontend Developer</li>
+                            <li><span>2022 - 2022</span><br>GCTU - myDementia Android/iOS App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>Ghana Communication Technology University - Bsc. Information Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------- Services ----------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> I create responsive user-friendly and visually appealing content to meet client needs. </p>
+                    <a href="https://github.com/AngeloKwakye" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Graphic Design</h2>
+                    <p> I design visually stunning contents with Canva for my client. With my keen eye for detail, I pay attention and design contents to my client's desires.</p>
+                    <a href="https://github.com/AngeloKwakye" target="_blank">Learan More</a>
+                </div>
+              <!--   <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim vero minima similique quibusdam natus. Commodi similique rem laudantium quidem molestias!</p>
+                    <a href="#">Learn More</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- ---------- portfolio ----------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/EcommerceUI.PNG">
+                    <div class="layer">
+                        <h3>Project 1</h3>
+                        <p>A multipage user-friendly ecommerce website. 
+                           A fully Responsive website with sticky navbar using html CSS and JavaScript</p>
+                        <a href="https://github.com/AngeloKwakye/Responsive-Ecommerce-Website" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"> </i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/AngularCrudAppUI.PNG">
+                    <div class="layer">
+                        <h3>Project 2</h3>
+                        <p>An open source Angular CRUD application using JSON server rest API with reactive forms | Angular material UI design <br> 
+                            This web app allows users to create, read, update and delete an employee.
+                        </p>
+                        <a href="https://github.com/AngeloKwakye/Angular-CRUD-app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/AngularAuthApp.PNG">
+                    <div class="layer">
+                        <h3>Project 3</h3>
+                        <p>An open source Angular authentication app using Json-server REST API. (Registration, login, role based access). <br>
+                            An Angular Application with admin role and users are restricted unless granted access by admin.
+                        </p>
+                        <a href="https://github.com/AngeloKwakye/Angular-Auth-Application" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------- contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> dangelokwakye@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0542356778 </p>
+                    <div class="social-icons">
+                        <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://twitter.com/iammdangelo_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+                        <a href="https://linkedin.com/in/angelokwakye" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AngeloKwakye" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./docs/Kwakye kwame D'Angelo- CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright@ D'Angelo <i class="fa-regular fa-heart"></i></p>
+        <!-- <p>copyright@ D'Angelo Made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p> -->
+    </div>
+    
+
+<!-- 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+ -->
+
+</body>
+
+<script src="script.js"></script>
 </html>
