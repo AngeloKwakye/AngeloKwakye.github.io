@@ -529,6 +529,11 @@ span{
     transform: translateY(-.25rem);
 }
 
+.space{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 /* ----------pRODUCTS ---------- */
 .product__description{
