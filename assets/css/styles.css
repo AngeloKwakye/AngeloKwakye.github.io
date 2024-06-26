@@ -530,7 +530,8 @@ span {
 
 .product__img {
   position: relative;
-  width: 120px;
+  width: 130px;
+  height: 130px;
   justify-self: center;
   margin-bottom: var(--mb-0-75);
   transition: 0.3s;
