@@ -569,8 +569,8 @@ span {
   background-color: var(--first-color-lighten);
   border-radius: 50%;
   position: absolute;
-  top: 18%;
-  left: 5%;
+  top: 0%;
+  left: 9%;
 }
 
 .product__card:hover .product__img {
@@ -1007,20 +1007,24 @@ span {
   .steps__card-title {
     font-size: var(--normal-font-size);
   }
+  .steps__card{
+    height:  280px;
+  }
   .product__description {
     padding: 0 16rem;
   }
   .product__container {
     padding: 4rem 0;
-    grid-template-columns: repeat(3, 185px);
+    grid-template-columns: repeat(3, 85px);
     gap: 4rem 6rem;
   }
   .product__img {
-    width: 160px;
+    width: 50px;
+    height: 45px;
   }
   .product__circle {
-    width: 110px;
-    height: 110px;
+    width: 60px;
+    height: 60px;
   }
   .product__title,
   .product__price {
